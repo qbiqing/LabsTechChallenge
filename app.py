@@ -7,6 +7,10 @@ app = Flask(__name__)
 def main():
     return render_template('index.html')
 
+@app.route('/bq2134', methods=['GET'])
+def page():
+    return render_template('my_page.html')
+
 
 if __name__ == '__main__':
     app.run()
